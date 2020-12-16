@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Mikado Ultra';
+    src: url("../../assets/font/MikadoBoldDEMO.ttf") format("truetype"), 
+    url("../../assets/font/MikadoBoldDEMO.woff") format("woff"), 
+    url("../../assets/font/MikadoBoldDEMO.woff2") format("woff2");
+    font-weight: bold;
+};
+
+
+.home {
+   display: flex;
+   flex-direction: column;
+   background-color: #62B2A5;
+   width: 400px;
+   height: 600px;
+//    border-style: solid;
+   border-radius: 14px;
+//    border-width: 3px;
+   margin: 50px auto 50px;
+   box-shadow: 5px 10px 5px  #429C8B;
+   color: white;
+   font-family: 'Mikado Ultra';
+   
+}
+
+.home_logo {
+    margin: 32px auto;
+    font-family: 'Mikado Ultra';
+    font-size: 48px;
+}
+
+.controlpic{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.form_div {
+    width:80%;
+    background-color: #429C8B;
+    margin: 0 auto;
+    height: 100px;
+    box-shadow: 5px 5px 5px  #338071;
+    border-radius: 10px;
+    position: relative;
+}
+
+.form_label {
+    margin: 12px auto;
+    // border-width: 1px;
+    // border-style: solid;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    width: 60%;
+    position: relative;
+    top: -10px;
+    background-color:#62B2A5;
+    padding: 0 10px 10px;
+}
+
+#categories {
+    background-color: #429C8B;
+    width: 80%;
+    margin: auto;
+    border-width: 0;
+    display: block;
+    color: #FCE495;
+    font-family: 'Mikado Ultra';
+    font-size: 13px;
+    outline-style: none;
+    
+}
+
+
+.form_button {
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 30px;
+    border-color: #429C8B;
+    border-style: solid;
+    border-width: 2px;
+    padding: 20px 50px;
+    box-shadow: 5px 5px 5px  #338071;
+    display: block;
+    font-weight: bold;
+    color: #429C8B;
+    font-family: 'Mikado Ultra';
+    font-size: 30px;
+    outline-style: none;
+
+    &:hover {
+        cursor: pointer;
+        border-width: 4px;
+        border-color: #338071;
+        color: #338071;
+    }
+}
+
+.option{
+
+}
