@@ -39,9 +39,9 @@ class Results extends Component {
                 <p className="results_score">{`${this.props.finalScore} out of 10`}</p>
                 </div>
                 <div className='results_comments'>
-                {this.props.finalScore === 10 ? <p> <img src={diamond} alt=""/> Unbelievable <img src={diamond} alt=""/>  <br/> Think you can do it again</p> 
-                : this.props.finalScore >= 5 ? <p><img src={star} alt=""/> Good Job <img src={star} alt=""/>  <br/> You might get a career in Web Dev</p> 
-                :  <p><img src={poo} alt=""/> Oh boy <img src={poo} alt=""/><br/> Maybe you should consider UX instead</p>}
+                {this.props.finalScore === 10 ? <p> <img src={diamond} alt=""/> Unbelievable <img src={diamond} alt=""/>  <br/> Are you already a Dev?</p> 
+                : this.props.finalScore >= 5 ? <p><img src={star} alt=""/> Good Job <img src={star} alt=""/>  <br/> You might get a career in Web Dev!</p> 
+                :  <p><img src={poo} alt=""/> Oh boy <img src={poo} alt=""/><br/> Keep practing, Devs never quit!</p>}
                 </div>
                 
                 <button className="results_button" onClick={this.handlePlayAgain}>PLAY AGAIN</button>
