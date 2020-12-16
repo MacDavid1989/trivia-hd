@@ -74,8 +74,8 @@ function Question({renderProps,nextQuestion ,isRight, isWrong, wrongFalse, right
     const regex3 = /&ocirc;/gi;
     const regex4 = /\$/gi;
     const regex5 = /\./gi;
-    const regex6 = /\-/gi;
-    const regex7 = /\:/gi;
+    const regex6 = /-/gi;
+    const regex7 = /:/gi;
     const regex8 = /\*/gi;
     const regex9 = /&Aring;/gi
     
@@ -84,7 +84,7 @@ function Question({renderProps,nextQuestion ,isRight, isWrong, wrongFalse, right
             <section className="questions">
                 <div className="questions_container">
                     <p className='questions_number'>{currQ +1} of 10</p>
-                    <p className="questions_question">{questions[currQ].question.replace(regex, '').replace(regex2, "").replace(regex3, '').replace(regex4,'').replace(regex5, '').replace(/\,/gi, '').replace(regex6, ' ').replace(regex7,'').replace(regex8,'').replace(/&ldquo;/gi,'').replace(/&rdquo;/gi,'').replace(/\(/gi,'').replace(/\)/gi,'').replace(/\!/gi,'').replace(/\//gi,'').replace(regex9, 'A')}</p>
+                    <p className="questions_question">{questions[currQ].question.replace(regex, '').replace(regex2, "").replace(regex3, '').replace(regex4,'').replace(regex5, '').replace(/\,/gi, '').replace(regex6, ' ').replace(regex7,'').replace(regex8,'').replace(/&ldquo;/gi,'').replace(/&rdquo;/gi,'').replace(/\(/gi,'').replace(/\)/gi,'').replace(/!/gi,'').replace(/\//gi,'').replace(regex9, 'A')}</p>
                 </div> 
                 <button className={`questions_true ${rightTrue} ${wrongTrue}`} onClick={()=>handleTrue()}>TRUE</button>
                 <button className={`questions_true ${rightFalse} ${wrongFalse}`} onClick={()=>handleFalse()}>FALSE</button>
